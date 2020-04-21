@@ -1,0 +1,311 @@
+[Root]
+Most Recent Package=webcamOnTop
+
+
+[Package|webcamOnTop 5.0|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\JP\Desktop\wcot\Package
+
+[Package|webcamOnTop 5.0|Configure DAO ISAMs]
+Applicable=No
+
+[Package|webcamOnTop 5.0|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|webcamOnTop 5.0|Files Found]
+
+[Package|webcamOnTop 5.0|Files Released]
+
+[Package|webcamOnTop 5.0|Missing Dependency Information]
+
+[Package|webcamOnTop 5.0|Out-of-Date Dependency Information]
+
+[Package|webcamOnTop 5.0|Files Added]
+C:\Documents and Settings\JP\Desktop\wcot\WebCam.ini=
+C:\Documents and Settings\JP\Desktop\wcot\setlink.reg=
+
+[Package|webcamOnTop 5.0|Files Removed]
+
+[Package|webcamOnTop 5.0|Files In Project]
+C:\Documents and Settings\JP\Desktop\wcot\WebCam.exe=Yes
+C:\WINDOWS\system32\MSVBVM60.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\MSINET.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Documents and Settings\JP\Desktop\wcot\WebCam.ini=Yes
+C:\Documents and Settings\JP\Desktop\wcot\setlink.reg=Yes
+
+[Package|webcamOnTop 5.0|Configure Registry Files]
+Applicable=Yes
+C:\Documents and Settings\JP\Desktop\wcot\setlink.reg=Register
+
+[Package|webcamOnTop 5.0|Configure Remote Servers]
+Applicable=No
+
+[Package|webcamOnTop 5.0|Install Locations]
+C:\Documents and Settings\JP\Desktop\wcot\WebCam.exe=$(AppPath)
+C:\WINDOWS\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSINET.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Documents and Settings\JP\Desktop\wcot\WebCam.ini=$(AppPath)
+
+[Package|webcamOnTop 5.0|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\JP\Desktop\wcot\WebCam.exe=No
+C:\Documents and Settings\JP\Desktop\wcot\WebCam.ini=No
+
+[Package|webcamOnTop 5.0|Distribution]
+Type=single
+Size=
+Title=webcamOnTop 5.0
+
+[Package|webcamOnTop 5.0|IconGroups]
+Group0=$(Programs)
+PrivateGroup0=-1
+Parent0=
+Group1=$(Start Menu)
+PrivateGroup1=-1
+Parent1=
+
+[Package|webcamOnTop 5.0|$(Programs)]
+Icon1=WebCam.exe
+Title1=webcamOnTop
+StartIn1=$(AppPath)
+Key1=Icon3
+
+[Package|webcamOnTop 5.0|$(Start Menu)]
+Icon1=WebCam.exe
+Title1=webcamOnTop
+StartIn1=$(AppPath)
+Key1=Icon4
+
+[Package|webcamOnTop 5.0|Package]
+PackageFolder=C:\Documents and Settings\JP\Desktop\wcot\Package
+ProjectFolder=C:\Documents and Settings\JP\Desktop\wcot
+ServerSideCab=
+File1=C:\Documents and Settings\JP\Desktop\wcot\Package\setup.exe
+File2=C:\Documents and Settings\JP\Desktop\wcot\Package\Setup.Lst
+File3=C:\Documents and Settings\JP\Desktop\wcot\Package\WebCam.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|webcamOnTop v5.1 Setup|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\JP\Desktop\wcot\Package
+
+[Package|webcamOnTop v5.1 Setup|Configure DAO ISAMs]
+Applicable=No
+
+[Package|webcamOnTop v5.1 Setup|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|webcamOnTop v5.1 Setup|Files Found]
+
+[Package|webcamOnTop v5.1 Setup|Files Released]
+
+[Package|webcamOnTop v5.1 Setup|Missing Dependency Information]
+
+[Package|webcamOnTop v5.1 Setup|Out-of-Date Dependency Information]
+
+[Package|webcamOnTop v5.1 Setup|Files Added]
+
+[Package|webcamOnTop v5.1 Setup|Files Removed]
+
+[Package|webcamOnTop v5.1 Setup|Files In Project]
+C:\Documents and Settings\JP\Desktop\wcot\WebCam.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\MSINET.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|webcamOnTop v5.1 Setup|Configure Registry Files]
+Applicable=No
+
+[Package|webcamOnTop v5.1 Setup|Configure Remote Servers]
+Applicable=No
+
+[Package|webcamOnTop v5.1 Setup|Install Locations]
+C:\Documents and Settings\JP\Desktop\wcot\WebCam.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSINET.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|webcamOnTop v5.1 Setup|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\JP\Desktop\wcot\WebCam.exe=No
+
+[Package|webcamOnTop v5.1 Setup|Distribution]
+Type=single
+Size=
+Title=webcamOnTop
+
+[Package|webcamOnTop v5.1 Setup|IconGroups]
+Group0=$(Start Menu)
+PrivateGroup0=-1
+Parent0=
+Group1=$(Programs)
+PrivateGroup1=-1
+Parent1=
+
+[Package|webcamOnTop v5.1 Setup|$(Start Menu)]
+Icon1=WebCam.exe
+Title1=webcamOnTop
+StartIn1=$(AppPath)
+Key1=Icon3
+
+[Package|webcamOnTop v5.1 Setup|$(Programs)]
+Icon1=WebCam.exe
+Title1=webcamOnTop
+StartIn1=$(AppPath)
+Key1=Icon4
+
+[Package|webcamOnTop v5.1 Setup|Package]
+PackageFolder=C:\Documents and Settings\JP\Desktop\wcot\Package
+ProjectFolder=C:\Documents and Settings\JP\Desktop\wcot
+ServerSideCab=
+File1=C:\Documents and Settings\JP\Desktop\wcot\Package\setup.exe
+File2=C:\Documents and Settings\JP\Desktop\wcot\Package\Setup.Lst
+File3=C:\Documents and Settings\JP\Desktop\wcot\Package\WebCam.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|webcamOnTop|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\JP\Desktop\wcot\Package
+
+[Package|webcamOnTop|Configure DAO ISAMs]
+Applicable=No
+
+[Package|webcamOnTop|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|webcamOnTop|Files Found]
+
+[Package|webcamOnTop|Files Released]
+
+[Package|webcamOnTop|Missing Dependency Information]
+
+[Package|webcamOnTop|Out-of-Date Dependency Information]
+
+[Package|webcamOnTop|Files Added]
+C:\Documents and Settings\JP\Desktop\wcot\webcam.ini=
+C:\Documents and Settings\JP\Local Settings\Temporary Internet Files\Content.IE5\ZSHS2KAN\webcamontop[1].asp=
+C:\Documents and Settings\JP\Desktop\wcot\setlink.reg=
+
+[Package|webcamOnTop|Files Removed]
+
+[Package|webcamOnTop|Files In Project]
+C:\Documents and Settings\JP\Desktop\wcot\webcam.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\MSINET.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Documents and Settings\JP\Desktop\wcot\webcam.ini=Yes
+C:\Documents and Settings\JP\Local Settings\Temporary Internet Files\Content.IE5\ZSHS2KAN\webcamontop[1].asp=Yes
+C:\Documents and Settings\JP\Desktop\wcot\setlink.reg=Yes
+
+[Package|webcamOnTop|Configure Registry Files]
+Applicable=Yes
+C:\Documents and Settings\JP\Desktop\wcot\setlink.reg=Register
+
+[Package|webcamOnTop|Configure Remote Servers]
+Applicable=No
+
+[Package|webcamOnTop|Install Locations]
+C:\Documents and Settings\JP\Desktop\wcot\webcam.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSINET.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Documents and Settings\JP\Desktop\wcot\webcam.ini=$(AppPath)
+C:\Documents and Settings\JP\Local Settings\Temporary Internet Files\Content.IE5\ZSHS2KAN\webcamontop[1].asp=$(AppPath)
+
+[Package|webcamOnTop|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\JP\Desktop\wcot\webcam.exe=No
+C:\Documents and Settings\JP\Desktop\wcot\webcam.ini=No
+C:\Documents and Settings\JP\Local Settings\Temporary Internet Files\Content.IE5\ZSHS2KAN\webcamontop[1].asp=No
+
+[Package|webcamOnTop|Distribution]
+Type=single
+Size=
+Title=webcamOnTop
+
+[Package|webcamOnTop|IconGroups]
+Group0=$(Start Menu)
+PrivateGroup0=-1
+Parent0=
+Group1=$(Programs)
+PrivateGroup1=-1
+Parent1=
+
+[Package|webcamOnTop|$(Start Menu)]
+Icon1=webcam.exe
+Title1=webcamOnTop
+StartIn1=$(AppPath)
+Key1=Icon3
+
+[Package|webcamOnTop|$(Programs)]
+Icon1=webcam.exe
+Title1=webcamOnTop
+StartIn1=$(AppPath)
+Key1=Icon4
+
+[Package|webcamOnTop|Package]
+PackageFolder=C:\Documents and Settings\JP\Desktop\wcot\Package
+ProjectFolder=C:\Documents and Settings\JP\Desktop\wcot
+ServerSideCab=
+File1=C:\Documents and Settings\JP\Desktop\wcot\Package\setup.exe
+File2=C:\Documents and Settings\JP\Desktop\wcot\Package\Setup.Lst
+File3=C:\Documents and Settings\JP\Desktop\wcot\Package\WebCam.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

@@ -1,0 +1,13 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\webcamOnTop]
+"URL Protocol"=""
+@="URL:webcamOnTop Protocol"
+
+[HKEY_CLASSES_ROOT\webcamOnTop\shell]
+
+[HKEY_CLASSES_ROOT\webcamOnTop\shell\open]
+
+[HKEY_CLASSES_ROOT\webcamOnTop\shell\open\command]
+@="C:\\PROGRA~1\\webcamOnTop\\WebCam.exe %1"
+
