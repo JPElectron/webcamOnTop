@@ -28,21 +28,21 @@ Edit C:\Program Files\webcamOnTop\webcam.ini to point to the file or URL where y
 
 Files below can be downloaded with "right-click, Save Target As..."  You must edit the file to contain the IP or hostname and other settings for your camera. The file path is an example for use in the INI, alternatively the file could be hosted and defined as a URL.
 
-    For AXIS cameras and video encoders see the samples at:
-http://jpelectron.com/sample/Axis%20IP%20Camera/
+For AXIS cameras and video encoders see the samples at:
+    http://jpelectron.com/sample/Axis%20IP%20Camera/
 
-    For use with Panasonic Network Cameras*
-http://[ip-address]:[port]/ImageViewer?Mode=Motion&Resolution=320x240
-http://[ip-address]:[port]/cgi-bin/camera  (for newer cameras like the WV-NS202A)
-http://[username]:[password]@[ip-address]:[port]/cgi-bin/camera  (include your login info)
+For use with Panasonic Network Cameras*
+    http://[ip-address]:[port]/ImageViewer?Mode=Motion&Resolution=320x240
+    http://[ip-address]:[port]/cgi-bin/camera  (for newer cameras like the WV-NS202A)
+    http://[username]:[password]@[ip-address]:[port]/cgi-bin/camera  (include your login info)
 
-    For use with webcamXP software
-http://[ip-address]:[port]/wetdex.html?number=1
+For use with webcamXP software
+    http://[ip-address]:[port]/wetdex.html?number=1
 
 *If you are using port 80, the default www port, you do not need to specify it.
-  Example: http://192.168.0.4:80/ is the same as http://192.168.0.4/
-  Some cameras or software may use an alternate port such as 8080.
-  Example: http://192.168.0.4:8080/
+Example: http://192.168.0.4:80/ is the same as http://192.168.0.4/
+Some cameras or software may use an alternate port such as 8080.
+Example: http://192.168.0.4:8080/
 
 AutoClose=20
 ...would cause webcamOnTop to close 20 seconds after it is launched. If the special HTML tag with close="X" is encountered, then that value would take precedence.
@@ -67,4 +67,5 @@ To suppress popup messages about script errors from within the webcamOnTop windo
 Related Links:
 
 http://www.axis.com/ - network cameras and video encoders
+
 http://www.webcamxp.com/ - webcam streaming software
