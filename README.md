@@ -14,11 +14,17 @@ Tested on Windows 2000, XP, Vista, 7, 8, 8.1 and Server 2003, 2008, 2012
 
 Start Menu:  Programs, webcamOnTop, webcamOnTop icon (also edit the webcam.ini file as indicated below)
 
-Command line:  webcam.exe http://example.com/file.htm
+Command line: 
 
-Remotely:  psexec \\computername -d -i -w "C:\Program Files\webcamOnTop" "C:\Program Files\webcamOnTop\webcam.exe" http://example.com/file.htm
+    webcam.exe http://example.com/file.htm
 
-Webpage link:  webcamontop://example.com/file.htm
+Remotely:
+
+    psexec \\computername -d -i -w "C:\Program Files\webcamOnTop" "C:\Program Files\webcamOnTop\webcam.exe" http://example.com/file.htm
+
+Webpage link:
+
+    webcamontop://example.com/file.htm
 
 <b>.ini Settings:</b>
 
