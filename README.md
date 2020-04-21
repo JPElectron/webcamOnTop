@@ -42,10 +42,10 @@ For use with webcamXP software
 
     http://[ip-address]:[port]/wetdex.html?number=1
 
-*If you are using port 80, the default www port, you do not need to specify it.
-Example: http://192.168.0.4:80/ is the same as http://192.168.0.4/
+If you are using port 80, the default www port, you do not need to specify it.
+Example: http://127.0.0.1:80/ is the same as http://127.0.0.1/
 Some cameras or software may use an alternate port such as 8080.
-Example: http://192.168.0.4:8080/
+Example: http://127.0.0.1:8080/
 
 AutoClose=20
 ...would cause webcamOnTop to close 20 seconds after it is launched. If the special HTML tag with close="X" is encountered, then that value would take precedence.
