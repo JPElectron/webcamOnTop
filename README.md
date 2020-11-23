@@ -61,7 +61,7 @@ FixupW=8
 FixupH=11
 ...would cause webcamOnTop's Width and Height to appear correctly under later versions of Windows themes that are not like XP's "Windows Classic" theme. Optionally, use these settings on select systems to display additional features further down/right in the HTML page that normal systems wouldn't see.
 
-<b>Usage:</b>
+## Usage
 
 webcamOnTop can be resized by clicking and dragging the bottom-right corner of the window, this preference along with window location is saved in the registry for the next launch. To automatically resize the window add the special tag <webcamontop width="362" height="295"> to the HTML file being displayed. When webcamOnTop sees this tag it will resize to the width and height specified.
 
