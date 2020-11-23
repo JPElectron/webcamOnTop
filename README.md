@@ -1,4 +1,5 @@
 # webcamOnTop
+
 View IP cameras in a window that will always stay on top
 
 Surf the web or read email while keeping an eye on the action. Works with the URL of any live image, all AXIS cameras or video encoders, and many other camera manufactures like Panasonic and AvertX. Also useful to display network monitors, weather radar, or any web content you don't want to miss.
@@ -7,7 +8,7 @@ webcamOnTop will not work directly with USB webcams (like those sold by Linksys 
 
 Tested on Windows 2000, XP, Vista, 7, 8, 8.1 and Server 2003, 2008, 2012
 
-<b>Installation:</b>
+## Installation
 
 1) Run wcontop-setup.exe and follow the wizard
 2) Launch webcamOnTop in any of the following ways...
@@ -26,7 +27,7 @@ Webpage link:
 
     webcamontop://example.com/file.htm
 
-<b>.ini Settings:</b>
+## .ini Settings
 
 The INI is used for all users on a machine, or whenever a file/URL is not included as a parameter with the executable. Using shortcuts with a parameter provides a way to customize the view for different windows users.
 
@@ -73,8 +74,18 @@ Press ESC to exit (or Clear on a Media Center Edition remote)
 
 To suppress popup messages about script errors from within the webcamOnTop window you should disable script debugging, see: http://jpelectron.com/sample/WWW%20and%20HTML/disable%20script%20debugging.txt
 
-<b>Related Links:</b>
+## Related Links
 
 http://www.axis.com/ - network cameras and video encoders
 
 http://www.webcamxp.com/ - webcam streaming software
+
+## License
+
+GPL does not allow you to link GPL-licensed components with other proprietary software (unless you publish as GPL too).
+
+GPL does not allow you to modify the GPL code and make the changes proprietary, so you cannot use GPL code in your non-GPL projects.
+
+If you wish to integrate this software into your commercial software package, or you are a corporate entity with more than 10 employees, then you should obtain a per-instance license, or a site-wide license, from http://jpelectron.com/buy
+
+[End of Line]
