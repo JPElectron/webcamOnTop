@@ -91,8 +91,24 @@ modSettings.Load_SizeAndPosition Me
 CloseInterval = 0
 TickTock = 0
 
-If URL Like "webcamontop://*" = True Then URL = Right(URL, Len(URL) - 14)
-If URL = "" Then
+If URL Like "webcamontop://*" = True Then
+    URL = Right(URL, Len(URL) - 14)
+    Open App.Path & "\webcam.ini" For Input As #1
+    Do While Not EOF(1)
+        Input #1, temp
+        If temp <> "" And temp Like "AutoClose*" = True Then
+            ticktemp = InStr(temp, "=")
+            CloseInterval = Right(temp, Len(temp) - ticktemp)
+        ElseIf temp <> "" And temp Like "FixupW*" = True Then
+            sizewtemp = InStr(temp, "=")
+            FixupW = Right(temp, Len(temp) - sizewtemp)
+        ElseIf temp <> "" And temp Like "FixupH*" = True Then
+            sizehtemp = InStr(temp, "=")
+            FixupH = Right(temp, Len(temp) - sizehtemp)
+        End If
+    Loop
+    Close #1
+ElseIf URL = "" Then
     Open App.Path & "\webcam.ini" For Input As #1
     Do While Not EOF(1)
         Input #1, temp
@@ -162,12 +178,26 @@ lastsized = False
         neww = ""
         For i = 1 To Len(W)
             currentchar = Mid(W, i, 1)
-            If currentchar = "/" Then currentchar = "\"
+            'not sure what this next line was doing
+            'If currentchar = "/" Then currentchar = "\"
             If currentchar = "%" Then
                 'get the next two
                 i = i + 2
                 currentchar = currentchar & Mid(W, i - 1, 1) & Mid(W, i, 1)
                 If currentchar = "%20" Then currentchar = " "
+                If currentchar = "%21" Then currentchar = "!"
+                If currentchar = "%23" Then currentchar = "#"
+                If currentchar = "%24" Then currentchar = "$"
+                If currentchar = "%25" Then currentchar = "%"
+                If currentchar = "%26" Then currentchar = "&"
+                If currentchar = "%2B" Then currentchar = "+"
+                If currentchar = "%2F" Then currentchar = "/"
+                If currentchar = "%3A" Then currentchar = ":"
+                If currentchar = "%3B" Then currentchar = ";"
+                If currentchar = "%3D" Then currentchar = "="
+                If currentchar = "%3F" Then currentchar = "?"
+                If currentchar = "%40" Then currentchar = "@"
+                If currentchar = "%5C" Then currentchar = "\"
             End If
             neww = neww & currentchar
         Next i
