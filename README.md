@@ -8,6 +8,8 @@ webcamOnTop will not work directly with USB webcams (like those sold by Linksys 
 
 Tested on Windows 2000, XP, Vista, 7, 8, 8.1 and Server 2003, 2008, 2012
 
+Note: webcamOnTop is intentionally a Windows 32-bit executable, this way it can run the Axis Media Control (AMC) available at: https://www.axis.com/support/tools/install-and-manage-systems/axis-media-control - which is also 32-bit, along with it's ActiveX component.
+
 ## Installation
 
 1) Run wcontop-setup.exe and follow the wizard
