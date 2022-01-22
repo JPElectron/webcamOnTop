@@ -6,9 +6,11 @@ Surf the web or read email while keeping an eye on the action. Works with the UR
 
 webcamOnTop will not work directly with USB webcams (like those sold by Linksys or Microsoft) unless a third-party application, such as webcamXP, makes the image stream available at a web (http://) address.
 
-Tested on Windows 2000, XP, Vista, 7, 8, 8.1 and Server 2003, 2008, 2012
+Tested on Windows 2000, XP, Vista, 7, 8, 8.1, 10, 11 and Server 2003/R2, 2008/R2, 2012/R2, 2016, 2019
 
 Note: webcamOnTop is intentionally a Windows 32-bit executable, this way it can run the Axis Media Control (AMC) available at: https://www.axis.com/support/tools/install-and-manage-systems/axis-media-control - which is also 32-bit, along with it's ActiveX component.
+
+Note: to launch rtsp:// or axrtsp:// URLs with an associated application such as VLC or Windows Media Player, see: https://github.com/JPElectron/ip-cam-win-url-protocol
 
 ## Installation
 
@@ -37,9 +39,7 @@ Edit C:\Program Files\webcamOnTop\webcam.ini to point to the file or URL where y
 
 Files below can be downloaded with "right-click, Save Target As..."  You must edit the file to contain the IP or hostname and other settings for your camera. The file path is an example for use in the INI, alternatively the file could be hosted and defined as a URL.
 
-For AXIS cameras and video encoders see the samples at:
-
-    http://jpelectron.com/sample/Axis%20IP%20Camera/
+For AXIS cameras and video encoders see the "examples" folder in this repository.
 
 For use with Panasonic Network Cameras*
 
@@ -74,13 +74,25 @@ Press F5 to refresh
 Press Backspace to go back a page
 Press ESC to exit (or Clear on a Media Center Edition remote)
 
-To suppress popup messages about script errors from within the webcamOnTop window you should disable script debugging, see: http://jpelectron.com/sample/WWW%20and%20HTML/disable%20script%20debugging.txt
+To suppress popup messages about script errors from within the webcamOnTop window you should disable script debugging...
+    
+    Open Internet Explorer > Tools > Internet Options
+    On the last tab "Advanced" under the "Browsing" section check both:
+    [X] Disable script debugging (Internet Explorer)
+    [X] Disable script debugging (Other)
+    Also ensure this is not checked:
+    [ ] Display a notification about every script error
+    
+    If you still continue to get script errors, try this...
+    Open regedit and navigate to:
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug
+    Rename the key name to: AeDebug_disabled
 
 ## Related Links
 
-http://www.axis.com/ - network cameras and video encoders
+http://www.axis.com - network cameras and video encoders
 
-http://www.webcamxp.com/ - webcam streaming software
+http://www.webcamxp.com - webcam streaming software
 
 ## License
 
