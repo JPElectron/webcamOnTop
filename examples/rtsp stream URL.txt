@@ -1,0 +1,45 @@
+
+streamed using the default compression (H264) and Unicast over UDP...
+rtsp://192.168.1.200/axis-media/media.amp
+
+streamed using the default compression (H264) and Multicast over UDP...
+rtsp://192.168.1.200/axis-media/media.amp?Transport=multicast
+
+streamed using the default compression (H264) and HTTP tunneling over TCP...
+rtsp://192.168.1.200/axis-media/media.amp?Transport=HTTP
+
+streamed using the jpeg compression and Unicast over UDP...
+rtsp://192.168.1.200/axis-media/media.amp?videocodec=jpeg
+
+streamed using the jpeg compression and HTTP tunneling over TCP...
+rtsp://192.168.1.200/axis-media/media.amp?Transport=HTTP?videocodec=jpeg
+
+
+For 360 degree cameras - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(such as AXIS M3047, M3048, M3057, M3058)
+
+Stream 1 = Overview (360 bubble)
+rtsp://192.168.1.200/axis-media/media.amp
+
+Stream 3 = Double Panorama
+rtsp://192.168.1.200/axis-media/media.amp?camera=3
+
+...to get this option you must select under the camera web-based interface:
+Image > scroll to the right > Capture Mode > "360 overview ... dewarped view"
+then press the Dewarped view button and select: Double Panorama
+other options include...
+
+- Panorama
+- Double Panorama
+- Quad
+- View Areas l & 2
+- Corner Left
+- Corner Right
+- Double Corner
+- Corridor
+
+...which may corresponds to other camera=# values in the URL, for example...
+
+?camera=3  happens to be the Double Panorama view
+
+[END]

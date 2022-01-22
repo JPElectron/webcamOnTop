@@ -1,0 +1,42 @@
+
+<ipaddress> = IP or DNS record of device
+[:<port>] optional, not needed for default port 80
+
+
+Axis 2400x Series - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+http://<ipaddress>[:<port>]/view/view.shtml
+http://<ipaddress>[:<port>]/admin/admin.shtml
+
+http://<ipaddress>[:<port>]/jpg[/<camera>]/<name>.jpg
+
+Examples:
+(source 1) http://192.168.1.200/jpg/image.jpg
+(source 1) http://192.168.1.200/jpg/1/image.jpg
+(quad)     http://192.168.1.200/jpg/quad.jpg
+
+<camera> = 1, 2, 3, 4 - applies only to servers with more than one input source
+option not allowed in "quad" request
+
+<name> = image, quad, halfsize, fullsize, hugesize
+"image" returns an image with the default resolution and compression, as defined in the system configuration
+
+
+Axis 241x Series - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+http://<ipaddress>[:<port>]/operator/basic.shtml
+http://<ipaddress>[:<port>]/view/index.shtml
+
+http://<ipaddress>[:<port>]/jpg[/<camera>]/image.jpg
+
+Examples:
+(source 1) http://192.168.1.200/jpg/image.jpg
+(source 1) http://192.168.1.200/jpg/1/image.jpg
+(quad)     http://192.168.1.200/jpg/quad/image.jpg
+
+<camera> = 1, 2, 3, 4, quad - applies only to servers with more than one input source
+
+Quad video stream (for use with Vitamin D Video, Sighthound Video, or other IP DVR)
+http://192.168.1.200/mjpg/quad/video.mjpg
+
+[END]

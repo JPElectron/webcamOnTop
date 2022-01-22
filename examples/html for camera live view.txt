@@ -1,0 +1,69 @@
+
+_______________________________________________________________________________________________________
+VLC ActiveX method...
+Note: Must have 32-bit VLC installed
+
+<OBJECT classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921" codebase="https://downloads.videolan.org/pub/videolan/contrib/win32/axvlc.cab" 
+width="853" height="640" id="vlc" events="True">
+   <param name="Src" value="rtsp://192.168.1.200/axis-media/media.amp" />
+   <param name="ShowDisplay" value="False" />
+   <param name="AutoLoop" value="False" />
+   <param name="AutoPlay" value="True" />
+</OBJECT>
+
+_______________________________________________________________________________________________________
+Axis ActiveX method...
+Note: Must have Axis Media Control installed: https://www.axis.com/support/tools/install-and-manage-systems/axis-media-control
+(IE browser may prompt for ActiveX install or otherwise fallback to motion jpg display)
+
+<SCRIPT LANGUAGE="JavaScript">
+var BaseURL = "http://192.168.1.200/";
+
+var DisplayWidth = "853";
+var DisplayHeight = "640";
+
+var File = "axis-cgi/mjpg/video.cgi?camera=1";
+
+// No changes required below this point
+var output = "";
+if ((navigator.appName == "Microsoft Internet Explorer") &&
+   (navigator.platform != "MacPPC") && (navigator.platform != "Mac68k"))
+{
+  // If Internet Explorer under Windows then use ActiveX 
+  output  = '<OBJECT ID="Player" width='
+  output += DisplayWidth;
+  output += ' height=';
+  output += DisplayHeight;
+  output += ' CLASSID="CLSID:DE625294-70E6-45ED-B895-CFFA13AEB044" ';
+  output += 'CODEBASE="';
+  output += BaseURL;
+  output += 'activex/AMC.cab">';
+  output += '<PARAM NAME="MediaURL" VALUE="';
+  output += BaseURL;
+  output += File + '">';
+  output += '<param name="MediaType" value="mjpeg-unicast">';
+  output += '<param name="ShowStatusBar" value="0">';
+  output += '<param name="ShowToolbar" value="0">';
+  output += '<param name="AutoStart" value="1">';
+  output += '<param name="StretchToFit" value="1">';
+  output += '<BR><B>Error</B><BR>';
+  output += 'AXIS Media Control (AMC) could not be registered.';
+  output += '<BR></OBJECT>';
+} else {
+  // If not IE for Windows use the browser itself to display
+  theDate = new Date();
+  output  = '<IMG SRC="';
+  output += BaseURL;
+  output += File;
+  output += '&dummy=' + theDate.getTime().toString(10);
+  output += '" HEIGHT="';
+  output += DisplayHeight;
+  output += '" WIDTH="';
+  output += DisplayWidth;
+  output += '" ALT="Camera Image">';
+}
+document.write(output);
+document.Player.ToolbarConfiguration = "play,+snapshot,+fullscreen"
+</SCRIPT>
+
+[END]
